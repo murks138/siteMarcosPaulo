@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="short icon" href="../imagens/favicon.ico">
+    <link rel="stylesheet" href="../estilos/formulario.css">
+</head>
+<body>
+    <header>
+        <img src="../imagens/logo.png" alt="Logo">
+    </header>
+    <hr>
+    <main>
+        <h2>CONTATE-NOS:</h2>
+        <section id="formulario">
+            <form action="#">
+                
+                <input type="text" id="nome" name="nome" required>
+                <label for="nome">Nome*</label><br>
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email*</label><br>
+                <input type="tel" id="telefone" name="telefone">
+                <label for="telefone">Telefone</label><br>
+                <input type="text" id="endereco" name="endereco">
+                <label for="endereco">Endereço</label><br>
+                <input type="number" id="data" name="data">
+                <label for="data">Data de Nascimento</label><br>
+                <select name="onde" id="onde" required>
+                    <option value="amigos">Amigos</option>
+                    <option value="familiares">Familíares</option>
+                    <option value="redes">Redes Sociais</option>
+                </select>
+                <label for="onde">Onde nos conheceu?</label><br> 
+                <textarea id="mensagem" name="mensagem" rows="2" required></textarea>
+                <label for="mensagem">Mensagem</label><br>
+                <input name="novidade" type="checkbox" id="novidade">Deseja receber novidades?        
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
